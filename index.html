@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    <!-- NAVBAR (will be using mobile first approach) -->
+    <!-- NAVBAR -->
 
     <nav class="p-3 flex bg-white justify-between items-center shadow-md fixed top-0 left-0 right-0 z-20">
         <a href="#" id="brand" class="flex gap-2 items-center flex-1">
-            <img class="object-cover max-h-12 max-w-12" src="/assets/asset 0.png" alt="logo">
+            <img class="object-cover max-h-12 max-w-12" src="/assets/asset0.png" alt="logo">
             <span class="text-lg font-medium font-display m-2">ToDesktop</span>
         </a>
         <div id="nav-menu" class="hidden lg:flex gap-12 m-2">
@@ -30,7 +30,7 @@
         <div class="hidden lg:flex flex-1 justify-end">
             <button
                 class="flex gap-2 items-center border-gray-400 border px-5 py-2 m-2 rounded-lg hover:border-gray-600">
-                <img src="/assets/asset 1.svg" alt="electron icon">
+                <img src="/assets/asset1.svg" alt="electron icon">
                 <span>Electron Developers</span>
                 <i class="fa-solid fa-arrow-right"></i>
             </button>
@@ -42,13 +42,11 @@
             <i class="fa-solid fa-bars text-gray-600"></i>
         </button>
 
-        <!-- Fixed div on expand -->
-        <!-- inset 0 covers all the space -->
 
         <div id="nav-dialog" class="hidden fixed bg-white inset-0 p-3  z-10 lg:hidden">
             <div id="nav-bar" class="flex justify-between">
-                <a href="#" id="brand" class="flex gap-2 items-center">
-                    <img class="object-cover max-h-12 max-w-12" src="/assets/asset 0.png" alt="logo">
+                <a href="#" id="brand-2" class="flex gap-2 items-center">
+                    <img class="object-cover max-h-12 max-w-12" src="/assets/asset0.png" alt="logo">
                     <span class="text-lg font-medium font-display m-2 ">ToDesktop</span>
                 </a>
                 <button class="p-2 lg:hidden" onclick="handleMenu()">
@@ -69,7 +67,7 @@
 
             <!-- electron button -->
             <button class="flex mt-6 gap-2 py-4 px-6 font-medium w-full hover:bg-gray-50">
-                <img src="/assets/asset 1.svg" alt="electron logo">
+                <img src="/assets/asset1.svg" alt="electron logo">
                 <span>Electron Developers</span>
             </button>
         </div>
@@ -88,8 +86,6 @@
             <div id="hero-container"
                 class="max-w-4xl mx-auto px-6 pb-16 pt-6 flex flex-col sm:items-center sm:text-center sm:pt-12 sm:max-w-2xl">
 
-                <!-- used w-fit for it to take only the content width -->
-                <!-- used -translate-y to make it move upwards while hover and also used transition so that it doesn't move in crappy way. -->
 
                 <div id="version-text"
                     class="flex my-6 gap-2 items-center border border-yellow-300 bg-yellow-50 rounded-lg py-1 px-3 justify-center w-fit shadow-md hover:shadow-lg hover:-translate-y-1 transition group">
@@ -99,7 +95,6 @@
                     <p class="font-display font-medium text-yellow-600">v0.21.1: <span
                             class="text-yellow-800">Find-in-page bug fixes</span></p>
 
-                    <!-- can't use  hover:translate-x on arrow as it will only hover when the cursor is on arrow, we wanted it to move to right when cursor is on whole version-text so we give version-text group property and arrow group-hover -->
 
                     <i
                         class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition duration-300">
@@ -123,8 +118,6 @@
                     </div>
                 </div>
 
-                <!-- already have set some prop for heading tags in css -->
-                <!-- leading-snug increase the line height-->
 
 
                 <h1 class="text-4xl font-semibold leading-snug mt-4 sm:text-6xl">Web app to desktop app in minutes</h1>
@@ -154,9 +147,9 @@
 
                 <!-- apps powered text -->
                 <div id="companies-title" class="flex justify-center gap-2">
-                    <img class="translate-y-2" src="/assets/asset 2.svg" alt="arrow">
+                    <img class="translate-y-2" src="/assets/asset2.svg" alt="arrow">
                     <span class="font-medium">APPS POWERED BY TODESKTOP</span>
-                    <img class="-scale-x-100 translate-y-2" src="/assets/asset 2.svg" alt="arrow">
+                    <img class="-scale-x-100 translate-y-2" src="/assets/asset2.svg" alt="arrow">
                 </div>
 
                 <!-- company lines group -->
@@ -166,62 +159,62 @@
                     <div id="line1" class="flex gap-4 w-screen -translate-x-48 transition-transform ease-linear">
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 3.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset3.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 4.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset4.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">LifeAt</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 5.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset5.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Convy</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 6.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset6.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Morgen</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 7.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset7.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Campsite</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 8.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset8.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Rise</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 9.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset9.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">ClickUp</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 10.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset10.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Notion</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 11.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset11.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Sunsama</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 12.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset12.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Beeper</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 13.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset13.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Cal</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 14.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset14.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Webstudio</span>
                         </div>
 
@@ -231,74 +224,74 @@
                     <div id="line2" class="flex gap-4 w-screen -translate-x-36 transition-transform ease-linear">
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 15.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset15.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 16.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset16.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 17.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset17.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 18.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset18.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 19.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset19.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 20.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset20.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Moises</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 21.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset21.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Basedash</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 22.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset22.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Cursor</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 23.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset23.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Linear</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 24.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset24.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Voiceflow</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 25.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset25.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Kitemaker</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 26.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset26.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Cron</span>
                         </div>
 
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 6.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset6.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Morgen</span>
                         </div>
 
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 6.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset6.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Morgen</span>
                         </div>
 
@@ -312,62 +305,62 @@
                         class="flex md:hidden gap-4 w-screen -translate-x-48 transition-transform ease-linear">
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 15.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset15.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 16.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset16.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 17.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset17.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 3.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset3.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 4.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset4.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 5.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset5.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 12.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset12.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 13.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset13.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 14.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset14.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 24.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset24.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 25.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset25.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
                         </div>
                         <div
                             class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                            <img src="./assets/asset 26.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <img src="./assets/asset26.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
                             <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
                         </div>
                     </div>
@@ -450,7 +443,7 @@
 
 
                 <div class="step-right-part pt-12 lg:w-1/2 lg:flex lg:justify-end">
-                    <img src="/assets/asset 66.svg" alt="step-right-image">
+                    <img src="/assets/asset66.svg" alt="step-right-image">
                 </div>
 
 
@@ -521,7 +514,7 @@
 
 
                 <div class="step-right-part pt-12 lg:w-1/2 lg:flex lg:justify-end">
-                    <img src="/assets/asset 66.svg" alt="step-right-image">
+                    <img src="/assets/asset66.svg" alt="step-right-image">
                 </div>
 
             </div>
@@ -592,7 +585,7 @@
 
 
                 <div class="step-right-part pt-12 lg:w-1/2 lg:flex lg:justify-end">
-                    <img src="/assets/asset 66.svg" alt="step-right-image">
+                    <img src="/assets/asset66.svg" alt="step-right-image">
                 </div>
 
             </div>
@@ -601,18 +594,16 @@
 
 
         <!-- Bento Grid -->
-        <!-- for bento grid used style = "grid-auto-rows : 96px; and for each div defined the row structure as it was consuming from row 1 to row 6 (for small boxes used row 1 to 3 and 4 to 6 and for the bigger divs used row 1 to 4 and row 3 to 6)" -->
 
         <div id="bento-grid" class="container">
             <h3 class="h2-style mb-14">ToDesktop handles the details</h3>
-            <!-- there is a div inside a div with some px diff because of that there is a gradient border -->
 
             <div id="grid-container" class="flex flex-col gap-6 lg:grid lg:grid-cols-3" style="grid-auto-rows: 96px;">
 
                 <div class="row-start-1 row-end-3 group rounded-2xl gradient-hover-outer">
                     <div class="gap-4 rounded-2xl w-full h-full flex flex-col items-center p-6 gradient-hover-inner">
                         <h3 class="text-2xl">Native Notifications</h3>
-                        <img src="/assets/asset 37.png" alt="new-event-image">
+                        <img src="/assets/asset37.png" alt="new-event-image">
                     </div>
                 </div>
 
@@ -621,14 +612,14 @@
                         <h3 class="text-2xl">Native Notifications</h3>
                         <p class="text-lg font-light text-center">We’ll ensure the underlying browser is up to date and
                             deliver performance improvements, security patches, & additional features.</p>
-                        <img src="/assets/asset 38.png" alt="new-event-image">
+                        <img src="/assets/asset38.png" alt="new-event-image">
                     </div>
                 </div>
 
                 <div class="row-start-1 row-end-3 group rounded-2xl gradient-hover-outer">
                     <div class="gap-4 rounded-2xl w-full h-full flex flex-col items-center p-6 gradient-hover-inner">
                         <h3 class="text-2xl">Native Notifications</h3>
-                        <img src="/assets/asset 39.png" alt="new-event-image">
+                        <img src="/assets/asset39.png" alt="new-event-image">
                     </div>
                 </div>
 
@@ -637,14 +628,14 @@
                         <h3 class="text-2xl">Native Notifications</h3>
                         <p class="text-lg font-light text-center">We’ll ensure the underlying browser is up to date and
                             deliver performance improvements, security patches, & additional features.</p>
-                        <img src="/assets/asset 40.png" alt="new-event-image">
+                        <img src="/assets/asset40.png" alt="new-event-image">
                     </div>
                 </div>
 
                 <div class="row-start-4 row-end-6 group rounded-2xl gradient-hover-outer">
                     <div class="gap-4 rounded-2xl w-full h-full flex flex-col items-center p-6 gradient-hover-inner ">
                         <h3 class="text-2xl">Native Notifications</h3>
-                        <img src="/assets/asset 37.png" alt="new-event-image">
+                        <img src="/assets/asset37.png" alt="new-event-image">
                     </div>
                 </div>
 
@@ -653,7 +644,7 @@
                         <h3 class="text-2xl">Native Notifications</h3>
                         <p class="text-lg font-light text-center">We’ll ensure the underlying browser is up to date and
                             deliver performance improvements, security patches, & additional features.</p>
-                        <img src="/assets/asset 38.png" alt="new-event-image">
+                        <img src="/assets/asset38.png" alt="new-event-image">
                     </div>
                 </div>
 
@@ -665,8 +656,6 @@
 
         <!-- company feature line -->
 
-        <!-- used whitespace-nowrap to make the text download analytics to appear in one line-->
-        <!-- used same js as used before for line 1,2 and 3 -->
 
 
         <div id="company-features-line" class="container">
@@ -707,7 +696,7 @@
                 <div id="left-company-stories" class="flex flex-col gap-12 p-8">
 
                     <div class="h-4 w-fit">
-                        <img src="/assets/asset 44.svg" alt="clickup logo">
+                        <img src="/assets/asset44.svg" alt="clickup logo">
                     </div>
 
                     <h3 class="text-xl leading-relaxed">ClickUp used ToDesktop to get their desktop app in front of
@@ -755,7 +744,7 @@
 
                     <div id="user-card" class="flex gap-4">
                         <div>
-                            <img class="rounded-full w-12" src="/assets/asset 45.jpeg" alt="person-image">
+                            <img class="rounded-full w-12" src="/assets/asset45.jpeg" alt="person-image">
                         </div>
 
                         <div class="flex flex-col">
@@ -773,8 +762,8 @@
 
                 <!-- right image  part  -->
 
-                <div id="right-company-stories" class="pl-12 flex items-center justify-center">
-                    <img src="/assets/asset 46.png" alt="image-design"
+                <div id="right-company-stories-image" class="pl-12 flex items-center justify-center">
+                    <img src="/assets/asset46.png" alt="image-design"
                         class="max-h-full max-w-full object-cover rounded-lg">
                 </div>
             </div>
@@ -804,13 +793,13 @@
                             <div
                                 class="-mr-3 rounded-full w-12 h-12  flex justify-center items-center overflow-hidden border border-white">
 
-                                <img class="min-w-16 min-h-16" src="/assets/asset 47.png" alt="">
+                                <img class="min-w-16 min-h-16" src="/assets/asset47.png" alt="">
 
                             </div>
 
                             <div class="rounded-full w-12 h-12 overflow-hidden border border-white">
 
-                                <img src="/assets/asset 48.jpeg" alt="">
+                                <img src="/assets/asset48.jpeg" alt="">
 
                             </div>
 
@@ -845,13 +834,13 @@
                             <div
                                 class="-mr-3 rounded-full w-12 h-12  flex justify-center items-center overflow-hidden border border-white">
 
-                                <img class="min-w-16 min-h-16" src="/assets/asset 47.png" alt="">
+                                <img class="min-w-16 min-h-16" src="/assets/asset47.png" alt="">
 
                             </div>
 
                             <div class="rounded-full w-12 h-12 overflow-hidden border border-white">
 
-                                <img src="/assets/asset 48.jpeg" alt="">
+                                <img src="/assets/asset48.jpeg" alt="">
 
                             </div>
 
@@ -887,13 +876,13 @@
                             <div
                                 class="-mr-3 rounded-full w-12 h-12  flex justify-center items-center overflow-hidden border border-white">
 
-                                <img class="min-w-16 min-h-16" src="/assets/asset 47.png" alt="">
+                                <img class="min-w-16 min-h-16" src="/assets/asset47.png" alt="">
 
                             </div>
 
                             <div class="rounded-full w-12 h-12 overflow-hidden border border-white">
 
-                                <img src="/assets/asset 48.jpeg" alt="">
+                                <img src="/assets/asset48.jpeg" alt="">
 
                             </div>
 
@@ -945,7 +934,7 @@
                 <!-- right image  part  -->
 
                 <div id="right-company-stories" class="flex items-center justify-center lg:w-1/2">
-                    <img src="/assets/asset 46.png" alt="image-design"
+                    <img src="/assets/asset46.png" alt="image-design"
                         class="max-h-full max-w-full object-cover rounded-lg pl-12">
                 </div>
             </div>
@@ -1118,8 +1107,6 @@
         <div id="faq" class="container">
             <h2 class="h2-style">FAQs</h2>
 
-            <!-- used grid and aria-controls in dt and same id in dd for dropdown -->
-            <!-- aligned items : items-start so that only only the clicked FAQ item expands while others remain unaffected  -->
 
 
             <div class="grid grid-cols-1 lg:grid-cols-2 items-start mt-6 gap-6">
@@ -1231,8 +1218,8 @@
 
             </div>
 
-            <a href="#" id="brand" class="flex gap-2 items-center flex-1">
-                <img class="object-cover max-h-12 max-w-12" src="/assets/asset 0.png" alt="logo">
+            <a href="#" id="brand-footer" class="flex gap-2 items-center flex-1">
+                <img class="object-cover max-h-12 max-w-12" src="/assets/asset0.png" alt="logo">
                 <span class="text-lg font-medium font-display m-2">ToDesktop</span>
             </a>
         </div>
