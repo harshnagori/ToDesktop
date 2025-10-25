@@ -2,7 +2,7 @@
 
 ## Preview
 
-You can view the live version of this project [here](https://harshnagori.github.io/Landing-page-tailwindCSS/).
+You can view the live version of this project [here](https://harshnagori.github.io/ToDesktop/).
 
 A modern, responsive landing page built with HTML, Tailwind CSS, and JavaScript. This project demonstrates the use of Tailwind CSS for rapid UI development and custom JavaScript for interactive elements.
 
